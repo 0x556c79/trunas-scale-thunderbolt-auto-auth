@@ -4,7 +4,25 @@
 This repository provides a udev rule and bash script to automatically authorize Thunderbolt devices on TrueNAS Scale systems. This simplifies the process of connecting new Thunderbolt devices and eliminates the need for manual authorization.
 It allows external storage devices to be used via Thunderbolt and ensures that zpools can be mounted because all devices are present.
 
-### **Installation**
+## Quick Installation
+
+Run the following command to install:
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/0x556c79/trunas-scale-thunderbolt-auto-auth/main/install.sh)
+```
+**What This Installer Does:**
+
+- Clones the repository
+- Installs necessary dependencies
+- Sets up configuration
+- Starts the service/tool
+
+**Security Considerations:**
+- Always validate what the script does before running
+- Recommend users review the script before executing
+
+### **Manual Installation steps**
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/0x556c79/trunas-scale-thunderbolt-auto-auth.git
