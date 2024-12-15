@@ -5,7 +5,14 @@ set -e
 echo "Installing TrueNAS Scale Thunderbolt Auto-Auth..."
 
 # Determine the user who invoked sudo
-INSTALL_USER=$(logname)
+if [ -n "$SUDO_USER" ]; then
+    INSTALL_USER=$SUDO_USER
+elif [ -n "$USER" ]; then
+    INSTALL_USER=$USER
+else
+    INSTALL_USER=$(id -un)
+fi
+
 INSTALL_HOME=$(eval echo ~$INSTALL_USER)
 INSTALL_DIR="${INSTALL_HOME}/truenas-thunderbolt-auth"
 
