@@ -1,7 +1,10 @@
 #!/bin/bash
 
+# Get the directory where the script is located
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 # Define paths
-SOURCE_RULE="99-thunderbolt.rules"
+SOURCE_RULE="$SCRIPT_DIR/99-thunderbolt.rules"
 TARGET_RULE="/etc/udev/rules.d/99-thunderbolt.rules"
 LOG_TAG="udev_rule_restore"
 
