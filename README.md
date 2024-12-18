@@ -5,6 +5,7 @@ This repository provides a udev rule and bash script to automatically authorize 
 It allows external storage devices to be used via Thunderbolt and ensures that zpools can be mounted because all devices are present.
 
 ## Quick Installation
+**Always validate what the script does before running**</br>
 
 Run the following command to install:
 
@@ -17,10 +18,6 @@ bash <(curl -s https://raw.githubusercontent.com/0x556c79/trunas-scale-thunderbo
 - Installs necessary dependencies
 - Sets up configuration
 - Starts the service/tool
-
-**Security Considerations:**
-- Always validate what the script does before running
-- Recommend users review the script before executing
 
 ### **Manual Installation steps**
 1. **Clone the Repository:**
