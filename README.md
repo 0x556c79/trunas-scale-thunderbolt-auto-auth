@@ -1,4 +1,4 @@
-# TrueNAS Scale Thunderbolt Boot Pool Auto-Authorization
+# TrueNAS Scale Thunderbolt Auto-Authorization
 
 This repository provides bash script to automatically authorize Thunderbolt devices on TrueNAS Scale systems by injecting Thunderbolt authorization directly into the initramfs boot environment.
 This simplifies the process of connecting new Thunderbolt devices and eliminates the need for manual authorization. It allows external storage devices to be used via Thunderbolt and ensures that zpools can be mounted because all devices are present.
